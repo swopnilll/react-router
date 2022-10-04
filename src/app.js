@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { Book } from "./pages/Book";
+import { BookLayout } from "./pages/BookLayout";
 import { BookList } from "./pages/BookList";
 import Home from "./pages/Home";
 import NewBook from "./pages/NewBook";
@@ -20,7 +21,7 @@ export const App = () => {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/books">
+        <Route path="/books" element={<BookLayout />}>
           <Route index element={<BookList />} />
           <Route path=":id" element={<Book />} />
           <Route path="new" element={<NewBook />} />
