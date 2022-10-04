@@ -10,6 +10,8 @@ export const BookList = () => {
       <Link to="/books/3" >Book 3</Link>
       <Link to="/books/4" >Book 4</Link>
       <Link to="/books/5" >Book 5</Link>
+      <br></br>
+      <Link to="/books/new">New Book</Link>
     </>
   )
 }
