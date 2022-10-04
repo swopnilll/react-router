@@ -15,7 +15,7 @@ export const BookLayout = () => {
             <br></br>
             <Link to="/books/new">New Book</Link>
             <br></br>
-            <Outlet />
+            <Outlet context={{ hello: "world" }} />
         </>
     )
 }
