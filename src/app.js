@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { Book } from "./pages/Book";
+import { BookList } from "./pages/BookList";
 import Home from "./pages/Home";
 
 export const App = () => {
@@ -17,7 +18,8 @@ export const App = () => {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/books" element={<Book />} />
+        <Route path="/books" element={<BookList />} />
+        <Route path="/books/:id" element={<Book />} />
       </Routes>
     </>
   );
